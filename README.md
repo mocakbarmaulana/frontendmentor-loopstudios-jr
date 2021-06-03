@@ -29,8 +29,9 @@ Users should be able to:
 
 ### Screenshot
 
-![]('./desk.png')
-![]('./mb.png')
+![]('./design/desk.png')
+![]('https://github.com/mocakbarmaulana/frontendmentor-loopstudios-jr/blob/master/mb.png')
+![ScreenShot](https://github.com/mocakbarmaulana/frontendmentor-loopstudios-jr/blob/master/mb.png)
 
 ### Links
 
