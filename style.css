@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  font-family: "Alata", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 69.688rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item a {
+  display: block;
+  padding: 20px;
+  position: relative;
+  color: #fff;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 25px;
+  height: 3px;
+  background: transparent;
+  transform: translateX(-50%);
+  transition: 0.5s ease-out;
+}
+
+.nav-item a:hover::after {
+  background-color: #fff;
+}
+
+.title {
+  color: #000;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+/* Header */
+header {
+  min-height: 650px;
+  padding: 30px 0;
+  background-color: #000;
+  background-image: url(/images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu-mobile {
+  display: none;
+}
+
+/* Hero */
+.hero {
+  width: 650px;
+  height: 280px;
+  padding: 40px 50px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.hero p {
+  color: #fff;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: 100;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+/* End Hero */
+/* End Header */
+
+/* Section Slogan */
+#slogan .container {
+  height: 740px;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#slogan article {
+  max-width: 500px;
+  max-height: 450px;
+  padding: 100px;
+  padding-right: 40px;
+  background-color: #fff;
+  line-clamp: 4;
+  position: absolute;
+  right: 0;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+/* #slogan article .title {
+  color: #000;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+} */
+
+#slogan article p:nth-child(2) {
+  font-size: 14px;
+  color: #aeaeae;
+  line-height: 1.5rem;
+}
+
+/* End Section Slogan */
+
+/* Products / creations */
+#products .container {
+  position: relative;
+  margin-bottom: 185px;
+}
+
+#products .title {
+  padding-top: 5px;
+}
+
+#products img {
+  width: 100%;
+}
+
+#products .btn {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #000;
+  outline: none;
+  padding: 10px 30px;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#products .btn:hover {
+  background: #000;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.grid-container figure {
+  position: relative;
+  cursor: pointer;
+}
+
+.grid-container figure::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0.5;
+  z-index: 1;
+  display: none;
+}
+
+.grid-container figure:hover::after {
+  display: block;
+  transition: 1s ease-out;
+}
+
+.grid-container figure:hover figcaption {
+  color: #000;
+  transition: 0.5s ease-out;
+}
+
+.grid-container figcaption {
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  left: 40px;
+  font-size: 2rem;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* End Products / creations */
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 35px 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+footer article h5 {
+  padding: 20px 0;
+  align-self: flex-start;
+}
+
+.footer-nav-menu .nav-item a {
+  padding: 0;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.footer-nav-menu .nav-item a::after {
+  left: 0;
+  transform: translateX(50%);
+}
+
+.footer-copy {
+  opacity: 0.6;
+  padding-bottom: 20px;
+}
+
+/* End Footer */
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  /* products / creators */
+  #products .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    row-gap: 50px;
+  }
+
+  /* end products / creators */
+}
+
+@media (max-width: 767px) {
+  body {
+    /* background: crimson; */
+    position: relative;
+  }
+
+  .container {
+    width: 80%;
+  }
+  .title {
+    width: 90%;
+    font-size: 2.5rem;
+  }
+
+  /* Header */
+  header.mobile {
+    background-image: none;
+    position: absolute;
+    height: 100vh;
+    z-index: 2;
+  }
+
+  .navbar-menu-mobile {
+    display: block;
+    cursor: pointer;
+    transition: 5s ease-in-out;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar.active .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    margin-top: 80px;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .navbar.active .navbar-menu a::after {
+    left: 10%;
+    /* transform: translateX(-50%); */
+  }
+
+  .hero {
+    width: 100%;
+    height: 250px;
+    /* padding: 0 30px; */
+  }
+
+  .hero p {
+    font-size: 3rem;
+  }
+
+  /* End Header */
+
+  /* Slogan */
+  #slogan .container {
+    flex-direction: column;
+  }
+
+  #slogan img {
+    width: 100%;
+  }
+
+  #slogan article {
+    position: relative;
+    max-width: none;
+    width: 100%;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  #slogan article .title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  /* End Slogan */
+
+  /* products / creators */
+  #products .title {
+    text-align: center;
+    /* margin-top: 100px; */
+    margin-bottom: 70px;
+  }
+
+  #products .btn {
+    top: auto;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+  }
+
+  #products img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #products .grid-container {
+    grid-template-columns: none;
+    /* grid-auto-rows: 155px; */
+    grid-template-rows: repeat(9, 155px);
+  }
+
+  .grid-container figcaption {
+    width: 200px;
+    left: 25px;
+    bottom: 20px;
+  }
+
+  /* End products / creators */
+
+  /* Footer */
+  footer .container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer article {
+    flex-direction: column;
+  }
+
+  footer article h5 {
+    padding: 0 0 20px 0;
+    align-self: center;
+  }
+
+  .footer-nav-menu .nav-item a {
+    text-align: center;
+  }
+
+  .footer-nav-menu .nav-item a::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-icon a {
+    margin-bottom: 10px;
+  }
+
+  /* End Footers */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+
+  /* Footer */
+  .footer-nav-menu .nav-item a {
+    text-align: center;
+    padding: 0 20px 20px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    /* background: blueviolet; */
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  /* Header */
+  .hero {
+    padding: 0 20px;
+  }
+
+  .hero p {
+    font-size: 2.5rem;
+  }
+  /* End Header */
+
+  /* Slogan */
+  #slogan article .title {
+    width: 100%;
+    font-size: 2rem;
+  }
+  /* End Slogan */
+
+  /* Products / Creator */
+  #products .container {
+    margin-bottom: 0;
+  }
+  /* End Products / Creator */
+
+  /* Footer */
+
+  footer article {
+    flex-direction: column;
+  }
+
+  .footer-nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-nav-menu .nav-item a {
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* End Footer */
+}
