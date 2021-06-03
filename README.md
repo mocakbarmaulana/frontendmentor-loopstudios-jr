@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![]('./design/desk.png')
-![]('./design/mb.png')
+![]('./desk.png')
+![]('./mb.png')
 
 ### Links
 
